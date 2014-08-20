@@ -10,6 +10,7 @@ stylesheets[all][] = css/menu.css
 stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/design.css
+stylesheets[all][] = css/local.css
 stylesheets[all][] = css/responsive.css
 
 ; Regions --------------------

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Paris Main feature.
+ */
+
+include_once 'paris_main.features.inc';

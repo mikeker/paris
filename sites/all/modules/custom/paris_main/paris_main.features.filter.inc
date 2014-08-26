@@ -127,8 +127,8 @@ function paris_main_filter_default_formats() {
     'status' => 1,
     'weight' => 0,
     'filters' => array(
-      'picture' => array(
-        'weight' => 0,
+      'media_filter' => array(
+        'weight' => 2,
         'status' => 1,
         'settings' => array(),
       ),

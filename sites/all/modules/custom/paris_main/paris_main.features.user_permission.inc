@@ -165,15 +165,6 @@ function paris_main_user_default_permissions() {
     'module' => 'breakpoints',
   );
 
-  // Exported permission: 'administer ckeditor'.
-  $permissions['administer ckeditor'] = array(
-    'name' => 'administer ckeditor',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'ckeditor',
-  );
-
   // Exported permission: 'administer content types'.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
@@ -208,15 +199,6 @@ function paris_main_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'image',
-  );
-
-  // Exported permission: 'administer imce'.
-  $permissions['administer imce'] = array(
-    'name' => 'administer imce',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'imce',
   );
 
   // Exported permission: 'administer menu'.
@@ -298,15 +280,6 @@ function paris_main_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: 'administer pictures'.
-  $permissions['administer pictures'] = array(
-    'name' => 'administer pictures',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'picture',
   );
 
   // Exported permission: 'administer search'.
@@ -462,15 +435,6 @@ function paris_main_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'path',
-  );
-
-  // Exported permission: 'customize ckeditor'.
-  $permissions['customize ckeditor'] = array(
-    'name' => 'customize ckeditor',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'ckeditor',
   );
 
   // Exported permission: 'customize shortcut links'.

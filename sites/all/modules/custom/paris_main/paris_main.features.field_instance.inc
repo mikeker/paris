@@ -96,7 +96,7 @@ function paris_main_field_default_field_instances() {
   $field_instances['node-article-field_image'] = array(
     'bundle' => 'article',
     'deleted' => 0,
-    'description' => 'Upload an image to go with this article.',
+    'description' => 'The primary image shows in teaser views and will display full-width at the top of the entry display page. Because of this, it\'s best to choose landscape formatted images otherwise your text will be pushed way down the page. Images must be less than 1920 x 1920 pixels and should be larger than 960 pixels wide for best results.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -121,26 +121,35 @@ function paris_main_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_image',
-    'label' => 'Image',
-    'required' => FALSE,
+    'label' => 'Primary image',
+    'required' => 0,
     'settings' => array(
-      'alt_field' => TRUE,
+      'alt_field' => 0,
       'default_image' => 0,
-      'file_directory' => 'field/image',
+      'file_directory' => 'photos',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '',
+      'max_resolution' => '1920x1920',
       'min_resolution' => '',
-      'title_field' => '',
+      'title_field' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'module' => 'image',
+      'active' => 1,
+      'module' => 'media',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'allowed_schemes' => array(
+          0 => 'public',
+          1 => 'private',
+        ),
+        'allowed_types' => array(
+          0 => 'image',
+        ),
+        'browser_plugins' => array(),
+        'preview_image_style' => '240-wide',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => -1,
     ),
   );
@@ -242,9 +251,9 @@ function paris_main_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Comma-separated list of categories.');
-  t('Image');
+  t('Primary image');
   t('Tags');
-  t('Upload an image to go with this article.');
+  t('The primary image shows in teaser views and will display full-width at the top of the entry display page. Because of this, it\'s best to choose landscape formatted images otherwise your text will be pushed way down the page. Images must be less than 1920 x 1920 pixels and should be larger than 960 pixels wide for best results.');
 
   return $field_instances;
 }

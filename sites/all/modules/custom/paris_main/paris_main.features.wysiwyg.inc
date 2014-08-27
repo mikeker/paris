@@ -46,6 +46,7 @@ function paris_main_wysiwyg_default_profiles() {
           'SpecialChar' => 1,
           'Maximize' => 1,
           'SpellChecker' => 1,
+          'Image' => 1,
         ),
         'drupal' => array(
           'media' => 1,

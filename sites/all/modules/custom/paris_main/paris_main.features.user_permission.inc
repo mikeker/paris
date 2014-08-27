@@ -165,15 +165,6 @@ function paris_main_user_default_permissions() {
     'module' => 'block',
   );
 
-  // Exported permission: 'administer breakpoints'.
-  $permissions['administer breakpoints'] = array(
-    'name' => 'administer breakpoints',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'breakpoints',
-  );
-
   // Exported permission: 'administer content types'.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',

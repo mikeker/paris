@@ -488,6 +488,7 @@ function paris_main_user_default_permissions() {
     'name' => 'create files',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -552,6 +553,7 @@ function paris_main_user_default_permissions() {
   $permissions['delete any image files'] = array(
     'name' => 'delete any image files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -618,6 +620,7 @@ function paris_main_user_default_permissions() {
     'name' => 'delete own image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -654,6 +657,7 @@ function paris_main_user_default_permissions() {
   $permissions['delete terms in tags'] = array(
     'name' => 'delete terms in tags',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -691,6 +695,7 @@ function paris_main_user_default_permissions() {
     'name' => 'download any image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -727,6 +732,7 @@ function paris_main_user_default_permissions() {
     'name' => 'download own image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -772,6 +778,7 @@ function paris_main_user_default_permissions() {
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -829,6 +836,7 @@ function paris_main_user_default_permissions() {
     'name' => 'edit own image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -856,6 +864,7 @@ function paris_main_user_default_permissions() {
   $permissions['edit terms in tags'] = array(
     'name' => 'edit terms in tags',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -1134,6 +1143,7 @@ function paris_main_user_default_permissions() {
     'name' => 'view own files',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -1143,6 +1153,7 @@ function paris_main_user_default_permissions() {
     'name' => 'view own private files',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -1154,6 +1165,7 @@ function paris_main_user_default_permissions() {
       'Editor' => 'Editor',
       'Writer' => 'Writer',
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );

@@ -4,3 +4,7 @@
  * box in theme settings and add your own styles here.
  */
 .admin-menu #navbar-administration { display: none; }
+
+blockquote {
+  display: inline-block;
+}

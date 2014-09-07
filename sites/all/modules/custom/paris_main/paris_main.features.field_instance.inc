@@ -238,7 +238,7 @@ function paris_main_field_default_field_instances() {
         'settings' => array(
           'colorbox_caption' => 'title',
           'colorbox_caption_custom' => '',
-          'colorbox_gallery' => 'post',
+          'colorbox_gallery' => 'page',
           'colorbox_gallery_custom' => '',
           'colorbox_image_style' => '',
           'colorbox_multivalue_index' => NULL,

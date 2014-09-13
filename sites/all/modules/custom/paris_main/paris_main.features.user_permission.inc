@@ -175,6 +175,15 @@ function paris_main_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'administer disqus'.
+  $permissions['administer disqus'] = array(
+    'name' => 'administer disqus',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'disqus',
+  );
+
   // Exported permission: 'administer entity view modes'.
   $permissions['administer entity view modes'] = array(
     'name' => 'administer entity view modes',
@@ -663,6 +672,16 @@ function paris_main_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'display disqus comments on profile'.
+  $permissions['display disqus comments on profile'] = array(
+    'name' => 'display disqus comments on profile',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'disqus',
+  );
+
   // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
@@ -1013,6 +1032,15 @@ function paris_main_user_default_permissions() {
     'module' => 'shortcut',
   );
 
+  // Exported permission: 'toggle disqus comments'.
+  $permissions['toggle disqus comments'] = array(
+    'name' => 'toggle disqus comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'disqus',
+  );
+
   // Exported permission: 'use PHP for settings'.
   $permissions['use PHP for settings'] = array(
     'name' => 'use PHP for settings',
@@ -1123,6 +1151,17 @@ function paris_main_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
+  );
+
+  // Exported permission: 'view disqus comments'.
+  $permissions['view disqus comments'] = array(
+    'name' => 'view disqus comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'disqus',
   );
 
   // Exported permission: 'view files'.

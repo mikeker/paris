@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Bootstraps enabling/disabling modules after the initial site install.
+ */
+
+/**
+ * Installs Disqus module.
+ */
+function paris_main_update_7001(&$sandbox) {
+  module_enable(array('disqus'));
+}

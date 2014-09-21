@@ -33,7 +33,10 @@ function paris_main_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '25';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
   /* Field: Content: Title */
@@ -112,7 +115,7 @@ function paris_main_views_default_views() {
   $handler->display->display_options['arguments']['uid']['specify_validation'] = TRUE;
   $handler->display->display_options['arguments']['uid']['validate']['type'] = 'user';
   $handler->display->display_options['arguments']['uid']['validate_options']['type'] = 'name';
-  $handler->display->display_options['path'] = 'from-the-beginning/%';
+  $handler->display->display_options['path'] = 'from-the-beginning';
   $export['entries_by_author'] = $view;
 
   return $export;

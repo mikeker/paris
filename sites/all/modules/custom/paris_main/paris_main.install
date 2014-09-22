@@ -10,3 +10,10 @@
 function paris_main_update_7001(&$sandbox) {
   module_enable(array('disqus'));
 }
+
+/**
+ * Installs Google Analytics.
+ */
+function paris_main_update_7002(&$sandbox) {
+  module_enable(array('google_analytics'));
+}

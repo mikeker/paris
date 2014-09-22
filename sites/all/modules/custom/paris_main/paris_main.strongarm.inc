@@ -632,7 +632,7 @@ system/ajax/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'media_draggable';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['media_draggable'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -653,7 +653,7 @@ system/ajax/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'media_minwidth';
-  $strongarm->value = '500';
+  $strongarm->value = '300';
   $export['media_minwidth'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -681,7 +681,7 @@ system/ajax/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'media_resizable';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['media_resizable'] = $strongarm;
 
   $strongarm = new stdClass();

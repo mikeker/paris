@@ -1,11 +1,11 @@
-name = Paris
-description = Paris theme based on the Bamboo theme by Danny Englander, <a href="http://highrockmedia.com">High Rock Media</a>
+name = Paris theme, based on the Bamboo sub-theme Starter Kit
+description = Bamboo is a responsive Drupal 7 theme designed and developed by Danny Englander, <a href="http://highrockmedia.com">High Rock Media</a>
 core = 7.x
+engine = phptemplate
 base theme = bamboo
-stylesheets[all][] = paris.css
 
 ; CSS --------------------
-stylesheets[all][] = paris.css
+stylesheets[all][] = css/paris.css
 
 ; Regions --------------------
 regions[top_links]       = Top Links

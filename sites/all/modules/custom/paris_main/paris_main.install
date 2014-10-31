@@ -17,3 +17,10 @@ function paris_main_update_7001(&$sandbox) {
 function paris_main_update_7002(&$sandbox) {
   module_enable(array('google_analytics'));
 }
+
+/**
+ * Installs Ratings and Voting API modules.
+ */
+function paris_main_update_7003(&$sandbox) {
+  module_enable(array('rate', 'votingapi'));
+}

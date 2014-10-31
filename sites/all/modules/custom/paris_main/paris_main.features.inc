@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function paris_main_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "backup_migrate" && $api == "backup_migrate_exportables") {
+    return array("version" => "1");
+  }
   if ($module == "file_entity" && $api == "file_default_displays") {
     return array("version" => "1");
   }

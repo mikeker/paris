@@ -1,0 +1,5 @@
+name = Paris
+description = Paris theme based on the Bamboo theme by Danny Englander, <a href="http://highrockmedia.com">High Rock Media</a>
+core = 7.x
+base theme = bamboo
+stylesheets[all][] = paris.css

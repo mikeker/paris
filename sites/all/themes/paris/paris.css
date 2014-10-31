@@ -19,7 +19,7 @@ nav#main-menu ul.menu li:last-child {
 }
 nav#main-menu ul.menu li:last-child a {
   padding-right: 42px;
-  background: transparent url(../images/rss.png) no-repeat center right;
+  background: transparent url(../bamboo/images/rss.png) no-repeat center right;
 }
 nav#main-menu ul.menu li:last-child a:hover {
   background-color: #777;

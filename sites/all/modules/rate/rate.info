@@ -8,9 +8,3 @@ files[] = rate.module
 files[] = rate.results.inc
 files[] = rate.hooks.inc
 files[] = rate.admin.inc
-; Information added by Drupal.org packaging script on 2014-02-10
-version = "7.x-1.7"
-core = "7.x"
-project = "rate"
-datestamp = "1392071605"
-

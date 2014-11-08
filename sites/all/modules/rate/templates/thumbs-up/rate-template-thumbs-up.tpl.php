@@ -1,18 +1,40 @@
 <?php
-
 /**
  * @file
- * Rate widget theme
+ * Theming for a thumbs-up rating button.
+ *
+ * Variables:
+ *  $up_button: String containing HTML for the up-vote link.
+ *  $results: Array containing current voting results:
+ *    'count' => Number of votes cast.
+ *    'rating' => Current rating.
+ *    'empty' => Boolean, TRUE if the current user has voted, FALSE otherwise.
+ *    'user_vote' => If empty is FALSE, user_vote contains the vote of the
+ *                   current user.
+ *  $just_voted: TRUE if the template is being rendered directly after a user's
+ *               vote has been cast.
+ *  $display_options: Array containing widget display options:
+ *    'description' => Optional description of this voting widget.
+ *    'title' => Title of the voting widget. Currently this will always be set
+ *               as the field is required in the widget admin UI.
  */
- 
-// print '<div class="rate-label">' . $display_options['title'] . '</div>';
+?>
+<div class="rate-widget-thumbs-up">
+  <div class="rate-label">
+    <?php print $display_options['title']; ?>
+  </div>
 
-print $up_button;
+  <?php print $up_button; ?>
 
-if ($info) {
-  print '<div class="rate-info">' . $info . '</div>';
-}
+  <?php if (!empty($info)): ?>
+    <div class="rate-info">
+      <?php print $info; ?>
+    </div>
+  <?php endif; ?>
 
-if ($display_options['description']) {
-  print '<div class="rate-description">' . $display_options['description'] . '</div>';
-}
+  <?php if (!empty($display_options['description'])): ?>
+    <div class="rate-description">
+      <?php print $display_options['description']; ?>
+    </div>
+  <?php endif; ?>
+</div>

@@ -34,3 +34,19 @@ nav#main-menu ul.menu li:last-child a:hover {
   float: left;
   margin-right: 5px;
 }
+
+/*
+ * Slick slideshow
+ */
+.field-name-field-slideshow.field-type-image img {
+  /* Override Bamboo default settings. */
+  border: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+.field-name-field-slideshow .slick-prev {
+  left: 0;
+}
+.field-name-field-slideshow .slick-next {
+  right: -10px;
+}

@@ -573,7 +573,17 @@ system/ajax/*';
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '6',
+        ),
+        'redirect' => array(
+          'weight' => '5',
+        ),
+      ),
       'display' => array(),
     ),
   );

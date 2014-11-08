@@ -83,9 +83,9 @@ function paris_main_image_default_styles() {
   // Exported image style: 960-wide.
   $styles['960-wide'] = array(
     'name' => '960-wide',
-    'label' => '960-wide',
+    'label' => 'Full width, content area',
     'effects' => array(
-      2 => array(
+      1 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -95,7 +95,7 @@ function paris_main_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 960,
+          'width' => 920,
           'height' => '',
           'upscale' => 0,
         ),

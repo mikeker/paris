@@ -24,3 +24,10 @@ function paris_main_update_7002(&$sandbox) {
 function paris_main_update_7003(&$sandbox) {
   module_enable(array('rate', 'votingapi'));
 }
+
+/**
+ * Enables multi-file upload.
+ */
+function paris_main_update_7004(&$sandbox) {
+  module_enable(array('multiupload_imagefield_widget'));
+}

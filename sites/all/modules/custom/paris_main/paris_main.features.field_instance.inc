@@ -160,7 +160,7 @@ function paris_main_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -222,7 +222,7 @@ function paris_main_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -4,
+      'weight' => 1,
     ),
   );
 
@@ -246,7 +246,7 @@ function paris_main_field_default_field_instances() {
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => -1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -295,7 +295,63 @@ function paris_main_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => -1,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-article-field_slideshow'
+  $field_instances['node-article-field_slideshow'] = array(
+    'bundle' => 'article',
+    'deleted' => 0,
+    'description' => 'Add additional images which will be shown in a carousel after the text of this post.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'colorbox',
+        'settings' => array(
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'field_post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => 'image_1600_wide',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => '960-wide',
+          'colorbox_node_style_first' => '',
+        ),
+        'type' => 'colorbox',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_slideshow',
+    'label' => 'Slideshow',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'photos',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '5 MB',
+      'max_resolution' => '3400x3400',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'multiupload_imagefield_widget',
+      'settings' => array(
+        'preview_image_style' => '240-wide',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_miw',
+      'weight' => 4,
     ),
   );
 
@@ -311,7 +367,7 @@ function paris_main_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -340,7 +396,7 @@ function paris_main_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => -4,
+      'weight' => 2,
     ),
   );
 
@@ -390,11 +446,13 @@ function paris_main_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add additional images which will be shown in a carousel after the text of this post.');
   t('Alt Text');
   t('Alternative text is used by screen readers, search engines, and when the image cannot be loaded. By adding alt text you improve accessibility and search engine optimization.');
   t('Body');
   t('Comma-separated list of categories.');
   t('Primary image');
+  t('Slideshow');
   t('Tags');
   t('The primary image shows in teaser views and will display full-width at the top of the entry display page. Because of this, it\'s best to choose landscape formatted images otherwise your text will be pushed way down the page. Images must be less than 1920 x 1920 pixels and should be larger than 960 pixels wide for best results.');
   t('Title Text');

@@ -5,3 +5,28 @@
  */
 
 include_once 'paris_main.features.inc';
+
+function paris_main_library() {
+  $libraries['paris-main-slick'] = array(
+    'title' => 'Slick Carousel',
+    'website' => 'https://github.com/kenwheeler/slick/',
+    'version' => '1.0',
+    'js' => array(
+      'sites/all/libraries/slick/slick/slick.min.js' => array(),
+    ),
+    'css' => array(
+      'sites/all/libraries/slick/slick/slick.css' => array(
+        'type' => 'file',
+        'media' => 'screen',
+      ),
+    ),
+  );
+  return $libraries;
+}
+
+/**
+ *  Implements hook_init().
+ */
+function paris_main_init() {
+  drupal_add_library('paris_main', 'paris-main-slick');
+}

@@ -437,6 +437,15 @@ function paris_main_user_default_permissions() {
     'module' => 'views',
   );
 
+  // Exported permission: 'administer voting api'.
+  $permissions['administer voting api'] = array(
+    'name' => 'administer voting api',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'votingapi',
+  );
+
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
@@ -1252,6 +1261,13 @@ function paris_main_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'view rate results page'.
+  $permissions['view rate results page'] = array(
+    'name' => 'view rate results page',
+    'roles' => array(),
+    'module' => 'rate',
   );
 
   // Exported permission: 'view revisions'.

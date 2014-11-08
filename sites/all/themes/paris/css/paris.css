@@ -24,3 +24,13 @@ nav#main-menu ul.menu li:last-child a {
 nav#main-menu ul.menu li:last-child a:hover {
     background-color: #777;
 }
+
+/*
+ * Rating widget
+ */
+.rate-label {
+  font-size: .9em;
+  line-height: 2em;
+  float: left;
+  margin-right: 5px;
+}

@@ -7,7 +7,9 @@
         dots: true,
         infinite: true,
         variableWidth: true,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        fade: true,
+        slidesToShow: 1
       });
     }
   }

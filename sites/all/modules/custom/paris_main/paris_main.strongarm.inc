@@ -383,7 +383,7 @@ system/ajax/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'disqus_weight';
-  $strongarm->value = '50';
+  $strongarm->value = '100';
   $export['disqus_weight'] = $strongarm;
 
   $strongarm = new stdClass();

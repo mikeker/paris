@@ -6,7 +6,6 @@
       $('.field-name-field-slideshow .field-items').slick({
         dots: true,
         infinite: true,
-        variableWidth: true,
         adaptiveHeight: true,
         fade: true,
         slidesToShow: 1

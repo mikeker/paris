@@ -315,7 +315,7 @@ function paris_main_field_default_field_instances() {
           'colorbox_gallery_custom' => '',
           'colorbox_image_style' => 'image_1600_wide',
           'colorbox_multivalue_index' => NULL,
-          'colorbox_node_style' => '960-wide',
+          'colorbox_node_style' => 'slideshow',
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',

@@ -91,6 +91,7 @@ features[image][] = 240-wide
 features[image][] = 480-wide
 features[image][] = 960-wide
 features[image][] = image_1600_wide
+features[image][] = slideshow
 features[node][] = article
 features[node][] = page
 features[taxonomy][] = tags

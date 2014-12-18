@@ -884,7 +884,7 @@ user/*/*';
   $strongarm->api_version = 1;
   $strongarm->name = 'googleanalytics_roles';
   $strongarm->value = array(
-    1 => 0,
+    1 => '1',
     2 => 0,
     3 => 0,
     4 => 0,

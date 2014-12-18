@@ -290,6 +290,8 @@ function paris_main_field_default_field_instances() {
           'media_default--media_browser_my_files' => 0,
           'upload' => 0,
         ),
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
       'weight' => 3,

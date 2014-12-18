@@ -961,6 +961,18 @@ function paris_main_user_default_permissions() {
     'module' => 'backup_migrate',
   );
 
+  // Exported permission: 'preview focal point'.
+  $permissions['preview focal point'] = array(
+    'name' => 'preview focal point',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Writer' => 'Writer',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'focal_point',
+  );
+
   // Exported permission: 'restore from backup'.
   $permissions['restore from backup'] = array(
     'name' => 'restore from backup',

@@ -1,8 +1,4 @@
 <?php
-//function paris_preprocess_node(&$vars) {
-//  dsm($vars);
-//}
-
 function paris_preprocess_rate_template_thumbs_up(&$variables) {
   // Rewrite voting widget based on the user's current vote and the current vote
   // count. Default text goes through if there are no votes recorded.
